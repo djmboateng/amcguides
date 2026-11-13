@@ -3,41 +3,56 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About</title>
-  <meta name="description" content="About David Boateng, the computer engineering student behind David Boateng's Simulations." />
-  <link rel="icon" type="image/png" href="assets/favicon-davidb.png" />
+  <title>About · Yamaha AMC Guides</title>
+  <meta name="description" content="About David Boateng and this self-taught, growing product guide to the Yamaha MG series mixers." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script src="loader.js"></script>
 </head>
 <body>
-  <div class="loader" id="loader" aria-hidden="true"><img src="assets/davidblogo.png" alt="" width="640" height="491" /><span class="loader-bar"><i></i></span></div>
+  <div class="loader" id="loader" aria-hidden="true"><img class="logo" src="assets/davidblogo.png" alt="" width="640" height="491" /><span class="loader-bar"><i></i></span></div>
   <header class="nav">
-    <a class="brand" href="index.html" aria-label="David Boateng's Simulations home"><img src="assets/davidblogo.png" alt="" width="640" height="491" /><span class="brand-tag">Simulations</span></a>
-    <nav><a href="index.html">Simulations</a><a href="about.html" aria-current="page">About</a><a href="donate.html">Donate</a></nav>
+    <a class="brand" href="index.html" aria-label="Yamaha AMC Guides home"><img class="logo" src="assets/davidblogo.png" alt="" width="640" height="491" /><span class="brand-tag">Yamaha <b>AMC</b> Guides</span></a>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><svg class="i-open" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="i-close" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <nav id="site-menu"><a href="index.html">Home</a><a href="simulations.html">Simulations</a><a href="about.html" aria-current="page">About</a><a href="donate.html">Donate</a></nav>
   </header>
 
   <main>
-    <div class="page about">
-      <div class="page-hero">
-        <h1>About</h1>
+    <div class="page">
+      <div class="page-hero has-badge">
+        <div>
+          <span class="eyebrow">About</span>
+          <h1>A self-taught project, still growing</h1>
+          <p>A product guide I'm building as I learn the gear myself.</p>
+        </div>
+        <div class="spin-badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="ring" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs><text><textPath href="#ring" textLength="286" lengthAdjust="spacing">MG16XU GUIDE · COMING SOON · FREE TO LEARN ·</textPath></text></svg>
+          <img src="assets/favicon.png" alt="" width="64" height="64" />
+        </div>
       </div>
 
       <section class="card">
         <div class="about-grid">
-          <img src="assets/davidblogo.png" alt="David B. logo" width="640" height="491" />
+          <img class="logo" src="assets/davidblogo.png" alt="David B. logo" width="640" height="491" />
           <div>
-            <p>I'm a Computer Engineering student at George Mason University and a frontend web developer. I have hands-on experience with AV systems, AI training, CAD tools, circuits and frontend web development, and I've been building websites since middle school. Growing up, I was also a big car enthusiast, which I love incorporating into my work.</p>
-            <p>I like making mission-driven projects and things people can actually play with. That's what this site is for.</p>
+            <p>I'm David Boateng, a Computer Engineering student at George Mason University and a frontend web developer with hands-on experience in AV systems.</p>
+            <p>This site is a <strong>self-taught initiative</strong>. Everything here comes from my own time with the Yamaha MG16XU: reading the manual, working the board and figuring out how each control affects the sound. I'm writing it down so the next person can learn it faster.</p>
           </div>
         </div>
       </section>
 
       <section class="card">
-        <h2>Why simulations?</h2>
-        <p>A simulation lets you change one thing and see what happens. I'm gathering the ones I build here so they're easy to find and play in any browser. Every simulation runs entirely on your device, and nothing you do is saved or sent anywhere.</p>
+        <h2>Where it's headed</h2>
+        <p>It starts with the <strong>MG16XU</strong>, which will stay free. As I keep expanding my product knowledge, I'll add courses on the MG16XU, then guides for the rest of the Yamaha MG series along with extra operations and reference material.</p>
+        <p>The project grows as I do, so expect it to change and improve over time.</p>
+      </section>
+
+      <section class="card note">
+        <p><strong>Independent guide.</strong> This site is not affiliated with or endorsed by Yamaha Corporation. Yamaha and MG16XU are trademarks of Yamaha Corporation. For official specifications and safety information, always check Yamaha's owner's manual.</p>
       </section>
 
       <section class="card">
@@ -45,12 +60,15 @@
         <div class="links">
           <a class="link-card" href="https://djmboateng.github.io/portfolio/" target="_blank" rel="noopener"><i>DB</i><div><span>Portfolio</span><b>djmboateng.github.io</b></div></a>
           <a class="link-card" href="https://www.pinterest.com/djmbart/_saved/" target="_blank" rel="noopener"><i>P</i><div><span>Pinterest</span><b>djmbart</b></div></a>
-          <a class="link-card" href="mailto:dmdboaten12@gmail.com"><i>✉</i><div><span>Email</span><b>dmdboaten12@gmail.com</b></div></a>
+          <a class="link-card" href="mailto:dmdboaten12@gmail.com"><i>@</i><div><span>Email</span><b>dmdboaten12@gmail.com</b></div></a>
         </div>
       </section>
     </div>
   </main>
 
-  <footer class="footer">© 2026 David Boateng · <a href="https://djmboateng.github.io/portfolio/" target="_blank" rel="noopener">Portfolio</a> · <a href="donate.html">Donate</a></footer>
+  <footer class="footer">
+    <p>© 2026 David Boateng · <a href="https://djmboateng.github.io/portfolio/" target="_blank" rel="noopener">Portfolio</a> · <a href="donate.html">Donate</a></p>
+    <p>An independent guide. Not affiliated with or endorsed by Yamaha Corporation.</p>
+  </footer>
 </body>
 </html>
